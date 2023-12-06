@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class MovieManager {
     private Movie[] movies;
     private final int limit;
@@ -35,8 +34,7 @@ public class MovieManager {
         return result;
     }
 
-    public static void main(String[] args) {
-        // Пример использования:
+    public void displayMovies() {
         MovieManager manager = new MovieManager(5); // Создаем менеджер с лимитом 5
 
         manager.addMovie("Бладшот");
