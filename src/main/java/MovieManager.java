@@ -33,31 +33,8 @@ public class MovieManager {
         }
         return result;
     }
-
-    public void displayMovies() {
-        MovieManager manager = new MovieManager(5); // Создаем менеджер с лимитом 5
-
-        manager.addMovie("Бладшот");
-        manager.addMovie("Вперед");
-        manager.addMovie("Отель Белград");
-        manager.addMovie("Джентельмены");
-        manager.addMovie("Человек-неведимка");
-        manager.addMovie("Тролли.Мирововй Тур");
-        manager.addMovie("Номер один");
-
-        Movie[] allMovies = manager.findAll();
-        System.out.println("Все фильмы:");
-        for (Movie movie : allMovies) {
-            System.out.println(movie.getTitle());
-        }
-
-        Movie[] lastMovies = manager.findLast();
-        System.out.println("\nПоследние добавленные фильмы:");
-        for (Movie movie : lastMovies) {
-            System.out.println(movie.getTitle());
-        }
-    }
 }
+
 
 
 
